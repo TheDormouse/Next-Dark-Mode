@@ -1,0 +1,15 @@
+/* data-theme didn't get set */
+:root {
+    --one: red;
+    --two: blue;
+}
+
+[data-theme="dark"]{
+        --one: black;
+        --two: grey;
+    }
+
+[data-theme="light"]{
+        --one: lightgrey;
+        --two: grey;
+    }

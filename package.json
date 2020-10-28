@@ -1,0 +1,19 @@
+{
+  "name": "next-dark-mode",
+  "version": "1.0.0",
+  "description": "Optimized dark mode in Next.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "Ben Martinez-Cain",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
