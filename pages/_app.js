@@ -1,5 +1,6 @@
 import '../components/global.css'
 import React from 'react'
+import Head from 'next/head'
 
 export default function App(props) {
     const [dark, setDark] = React.useState(true)
@@ -10,7 +11,6 @@ export default function App(props) {
     //Set the initial theme when the page is loaded
     setDark(window.matchMedia("(prefers-color-scheme: dark)").matches)
       setShowChild(true);
-      console.log(dark)
     }, []);
     
     if (!showChild) {
@@ -32,5 +32,11 @@ function Rendered({Component, pageProps, dark, setDark}){
         //https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85
     }, [dark])
     
-    return <Component dark={dark} setDark={setDark} {...pageProps} />
+    return (
+        <>
+        <Head>
+            <title>Next.js Dark Mode</title></Head>
+    <Component dark={dark} setDark={setDark} {...pageProps} />
+    </>
+    )
 }

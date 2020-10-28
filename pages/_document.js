@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-            <title>Next.js Dark Mode</title>
             <meta name="description" content="Next.js with Dark Mode - without using libraries"></meta>
             <meta name="image" content="https://next-dark-mode-five.vercel.app/demo.png" />
             <meta property="og:title" content="Next.js Dark Mode" />
