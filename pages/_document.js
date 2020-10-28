@@ -24,6 +24,7 @@ class MyDocument extends Document {
 <meta name="twitter:image:alt" content="Next.js Dark Mode" />
 
 <meta name="twitter:site" content="@Mad_Marchy"></meta>
+<link type="application/json+oembed" href="oembed.json" />
             </Head>
         <body>
           <Main />
